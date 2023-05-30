@@ -8,5 +8,10 @@ export default {
 </script>
 
 <template>
-  <div>App Vite</div>
+  <div class="rubik">Good Food</div>
 </template>
+<style lang="scss">
+.rubik {
+  font-family: $font-default;
+}
+</style>
