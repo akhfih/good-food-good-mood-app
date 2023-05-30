@@ -1,2 +1,33 @@
 // Font 
 $font-default : "Rubik", Helvetica, sans-serif;
+
+// Color
+$color: (
+    primary: (
+        1: #8BAC3E,
+        2: #F0FEEB,
+        3: #F9FFF6
+    ),
+    black: (
+        1: #000000,
+        2: #333333,
+        3: #757575,
+    ),
+    white: #FFFFFF,
+    verdigris: (
+        1: #40A2B1,
+        2: #E6F3F5
+    ),
+    violet-blue: (
+        1: #405EB6,
+        2: #EAEEFA
+    ), 
+    violet: (
+        1: #B23F74,
+        2: #F9EEF3
+    ),
+    avocado: (
+        1: #A4B441,
+        2: #F3F7D9
+    )
+);
