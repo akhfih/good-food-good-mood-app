@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <!-- <div class="wrapper">
     <BaseButton large>ALL Receipt</BaseButton>
     <BaseButton>Daftar Sekarang</BaseButton>
     <BaseButton secondary>About Us</BaseButton>
@@ -8,16 +8,21 @@
     <BaseButton icon><i class="fa-brands fa-instagram"></i> </BaseButton>
 
     <SlideButton next></SlideButton>
-  </div>
+
+
+  </div> -->
+  <TheNavbar></TheNavbar>
 </template>
 <script>
-import BaseButton from "../components/BaseButton.vue";
-import SlideButton from "../components/SlideButton.vue";
+// import BaseButton from "../components/BaseButton.vue";
+// import SlideButton from "../components/SlideButton.vue";
+import TheNavbar from "../components/TheNavbar.vue";
 export default {
   name: "ViewHome",
   components: {
-    BaseButton,
-    SlideButton,
+    // BaseButton,
+    // SlideButton,
+    TheNavbar,
   },
 };
 </script>
