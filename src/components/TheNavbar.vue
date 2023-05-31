@@ -45,18 +45,27 @@ export default {
 </script>
 <style lang="scss">
 .header {
-  border: 1px solid #f8f8f8;
+  background-color: transparent;
+
+  @media (max-width: 640px) {
+    border: 1px solid #f8f8f8;
+  }
 }
 .wrapper {
+  max-width: 1200px;
   display: flex;
   margin: 0 32px;
   padding: 28px 0;
   justify-content: space-between;
   align-items: center;
-  background: #ffffff;
+
   height: 96px;
   @media (min-width: 640px) {
     margin: 0 120px;
+    // background: #ffffff;
+  }
+  @media (min-width: 1200px) {
+    margin: 0 auto;
   }
 }
 
@@ -77,6 +86,7 @@ a {
 .nav {
   color: map-get($color, black(2));
   gap: 32px;
+  background-color: transparent;
   @media (max-width: 960px) {
     display: none;
   }

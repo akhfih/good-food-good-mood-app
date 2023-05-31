@@ -12,17 +12,20 @@
 
   </div> -->
   <TheNavbar></TheNavbar>
+  <TheHeroSection />
 </template>
 <script>
 // import BaseButton from "../components/BaseButton.vue";
 // import SlideButton from "../components/SlideButton.vue";
 import TheNavbar from "../components/TheNavbar.vue";
+import TheHeroSection from "../components/TheHeroSection.vue";
 export default {
   name: "ViewHome",
   components: {
     // BaseButton,
     // SlideButton,
     TheNavbar,
+    TheHeroSection,
   },
 };
 </script>
