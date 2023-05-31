@@ -8,7 +8,7 @@ export default {
 </script>
 
 <template>
-  <div class="rubik">Good Food</div>
+  <router-view />
 </template>
 <style lang="scss">
 .rubik {
