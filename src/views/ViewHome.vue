@@ -13,6 +13,10 @@
   </div> -->
   <TheNavbar></TheNavbar>
   <TheHeroSection />
+  <BaseHeading>
+    <template #title> Browser Our Trending </template>
+    <template #sub-title>Receipt</template>
+  </BaseHeading>
   <br />
   <CardSmall bg-color="bg-color-1" :src-img="kebab"></CardSmall>
   <star-rating></star-rating>
@@ -29,6 +33,7 @@ import CardBig from "../components/CardBig.vue";
 import StarRating from "vue-star-rating";
 import kebab from "@/assets/images/kebab.png";
 import pizza from "@/assets/images/1.png";
+import BaseHeading from "@/components/BaseHeading.vue";
 
 export default {
   name: "ViewHome",
@@ -41,6 +46,7 @@ export default {
     // StarsRating,
     StarRating,
     CardBig,
+    BaseHeading,
   },
   data() {
     return {
