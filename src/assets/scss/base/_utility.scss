@@ -1,0 +1,14 @@
+.bg-color {
+  &-1 {
+    background-color: map-get(map-get($color, primary), 2);
+  }
+  &-2 {
+    background-color: map-get(map-get($color, verdigris), 2);
+  }
+  &-3 {
+    background-color: map-get(map-get($color, violet-blue), 2);
+  }
+  &-4 {
+    background-color: map-get(map-get($color, violet), 2);
+  }
+}
