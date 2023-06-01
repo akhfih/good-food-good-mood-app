@@ -42,6 +42,9 @@ export default {
 <style lang="scss">
 .hero {
   height: 768px;
+  @media (min-width: 960px) {
+    height: 653px;
+  }
   background-image: url(@/assets/images/hero-background.svg);
 
   .wrapper {
@@ -64,9 +67,6 @@ export default {
     @media (min-width: 960px) {
       width: 500px;
     }
-    // @media (min-width: 640px) {
-    //   width: auto;
-    // }
 
     h1 {
       font-style: normal;

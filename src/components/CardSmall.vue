@@ -1,9 +1,9 @@
 <template>
-  <div class="card" :class="[bgColor]">
+  <div class="card" :class="[bgcolor]">
     <div class="wrapper">
       <img class="card__img" :src="srcImg" alt="" />
       <h2 class="card__title">{{ title }}</h2>
-      <p class="card__sub-title">{{ subTitle }}</p>
+      <p class="card__sub-title">{{ subtitle }}</p>
     </div>
   </div>
 </template>
@@ -15,7 +15,7 @@ export default {
       type: String,
       default: "",
     },
-    bgColor: {
+    bgcolor: {
       type: String,
       default: "",
     },
@@ -23,7 +23,7 @@ export default {
       type: String,
       default: "Title",
     },
-    subTitle: {
+    subtitle: {
       type: String,
       default: "subTitle",
     },
@@ -36,9 +36,9 @@ export default {
 <style lang="scss" scoped>
 .card {
   max-width: 230px;
-  height: 173px;
+  max-height: 172px;
   text-align: center;
-  padding: 30px 80px;
+  padding: 30px 40px;
   border-radius: 8px;
   cursor: pointer;
 
@@ -68,7 +68,10 @@ export default {
   &:hover {
     background-image: url(@/assets/images/card-backgound-hover.png);
     background-size: cover;
-    height: 196px;
+
+    position: relative;
+    z-index: 1;
+    height: 120px;
   }
 }
 </style>

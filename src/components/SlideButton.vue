@@ -70,7 +70,7 @@ export default {
   },
 };
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .button {
   padding: 0 12px;
   height: 50px;
