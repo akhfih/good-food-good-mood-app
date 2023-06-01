@@ -15,6 +15,8 @@
   <TheHeroSection />
   <br />
   <CardSmall bg-color="bg-color-1" :src-img="kebab"></CardSmall>
+  <star-rating></star-rating>
+  <CardBig bg-color="bg-color-1" :src-img="pizza"></CardBig>
 </template>
 <script>
 // import BaseButton from "../components/BaseButton.vue";
@@ -22,7 +24,12 @@
 import TheNavbar from "../components/TheNavbar.vue";
 import TheHeroSection from "../components/TheHeroSection.vue";
 import CardSmall from "../components/CardSmall.vue";
+import CardBig from "../components/CardBig.vue";
+// import StarsRating from "@/components/StarsRating.vue";
+import StarRating from "vue-star-rating";
 import kebab from "@/assets/images/kebab.png";
+import pizza from "@/assets/images/1.png";
+
 export default {
   name: "ViewHome",
   components: {
@@ -31,10 +38,14 @@ export default {
     TheNavbar,
     TheHeroSection,
     CardSmall,
+    // StarsRating,
+    StarRating,
+    CardBig,
   },
   data() {
     return {
-      kebab,
+      kebab: kebab,
+      pizza,
     };
   },
 };

@@ -4,12 +4,25 @@
       <img class="card__img" :src="srcImg" alt="" />
       <h2 class="card__title">{{ title }}</h2>
       <p class="card__sub-title">{{ subTitle }}</p>
+      <StarRating
+        :show-rating="false"
+        rounded-corners
+        class="card__rating"
+        :rating="rating"
+        :read-only="true"
+        :star-size="16"
+        :active-color="`#FF8412`"
+      />
     </div>
   </div>
 </template>
 <script>
+import StarRating from "vue-star-rating";
 export default {
-  name: "CardSmall",
+  name: "CardBig",
+  components: {
+    StarRating,
+  },
   props: {
     srcImg: {
       type: String,
@@ -21,11 +34,15 @@ export default {
     },
     title: {
       type: String,
-      default: "Title",
+      default: "Pizza Paperony",
     },
     subTitle: {
       type: String,
-      default: "subTitle",
+      default: "Pizza",
+    },
+    rating: {
+      type: Number,
+      default: 3,
     },
   },
   data() {
@@ -35,40 +52,49 @@ export default {
 </script>
 <style lang="scss" scoped>
 .card {
-  max-width: 230px;
-  height: 173px;
+  max-width: 287px;
+  height: 306px;
   text-align: center;
-  padding: 30px 80px;
-  border-radius: 8px;
+  padding: 33px 24px;
+  border-radius: 17px;
   cursor: pointer;
 
   .wrapper {
     display: flex;
     flex-direction: column;
+    align-items: start;
   }
 
   &__img {
-    width: 47px;
+    width: 118px;
     height: auto;
-    margin-bottom: 24px;
+    margin-bottom: 19px;
   }
 
   &__title {
+    font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 26px;
+    line-height: 50px;
+    color: #000;
   }
   &__sub-title {
+    font-family: "Rubik";
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: map-get(map-get($color, primary), 1);
+  }
+
+  &__rating {
+    padding-top: 19px;
   }
 
   &:hover {
     background-image: url(@/assets/images/card-backgound-hover.png);
     background-size: cover;
-    height: 196px;
+    box-shadow: 0px 11px 39px rgba(0, 0, 0, 0.07);
   }
 }
 </style>

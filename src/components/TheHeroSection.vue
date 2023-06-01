@@ -42,7 +42,7 @@ export default {
 <style lang="scss">
 .hero {
   height: 768px;
-  background-image: url(../assets/images/hero-background.svg);
+  background-image: url(@/assets/images/hero-background.svg);
 
   .wrapper {
     margin-top: 72px;
