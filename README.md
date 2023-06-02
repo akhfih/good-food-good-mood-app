@@ -30,8 +30,6 @@ yarn build
 
 ### Preview
 
-![alt text](https://github.com/akhfih/good-food-good-mood-app/blob/main/src/assets/images/Mobile.png?raw=true)
-
 ![alt text](https://github.com/akhfih/good-food-good-mood-app/blob/main/src/assets/images/Desktop.png?raw=true)
 
 ```sh
