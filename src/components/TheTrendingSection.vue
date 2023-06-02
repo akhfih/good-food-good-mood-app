@@ -112,6 +112,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .wrapper {
+  height: min-content;
   display: flex;
   flex-direction: column;
   max-width: 1200px;
@@ -127,6 +128,7 @@ export default {
   }
 }
 .trending {
+  offset: auto;
   display: flex;
   flex-direction: column;
 

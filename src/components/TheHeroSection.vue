@@ -41,19 +41,11 @@ export default {
 </script>
 <style lang="scss">
 .hero {
-  height: 768px;
-  @media (min-width: 960px) {
-    height: 653px;
-  }
+  height: min-content;
   background-image: url(@/assets/images/hero-background.svg);
 
   .wrapper {
-    margin-top: 72px;
-    padding-top: 164px;
-    @media (max-width: 960px) {
-      margin-top: 120px;
-    }
-
+    height: min-content;
     display: flex;
     background-color: transparent;
   }
@@ -119,6 +111,5 @@ export default {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 100px;
 }
 </style>
