@@ -10,9 +10,9 @@
           <li class="nav__item">
             <a href="#" class="nav__link"> About </a>
           </li>
-          <li class="nav__item">
+          <li class="nav__item item-mark">
             <a href="#" class="nav__link"> Promotion </a>
-            <!-- <span class="nav__hot">HOT</span> -->
+            <p class="nav__hot">HOT</p>
           </li>
           <li class="nav__item">
             <a href="#" class="nav__link"> Blogs </a>
@@ -83,6 +83,10 @@ a {
   text-decoration: none;
 }
 
+.item-mark {
+  position: relative;
+}
+
 .nav {
   color: map-get($color, black(2));
   gap: 32px;
@@ -118,10 +122,23 @@ a {
   }
 
   &__hot {
-    background-color: red;
-    color: map-get($color, white);
-    font-size: 22px;
-    line-height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background: #e7462d;
+    color: white;
+    text-align: center;
+    width: 36px;
+    height: 19px;
+    bottom: 20px;
+    right: 0;
+
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 14px;
   }
 }
 
