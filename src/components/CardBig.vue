@@ -52,7 +52,8 @@ export default {
 </script>
 <style lang="scss" scoped>
 .card {
-  max-width: 287px;
+  // min-width: 287px;
+  width: auto;
   height: 306px;
   text-align: center;
   padding: 33px 24px;

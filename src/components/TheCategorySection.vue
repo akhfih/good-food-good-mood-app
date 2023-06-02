@@ -2,7 +2,7 @@
   <div class="category">
     <div class="wrapper">
       <BaseHeading class="category__heading">
-        <template #title> Browser Our Trending </template>
+        <template #title> Browser Our Category</template>
         <template #sub-title>Receipt</template>
       </BaseHeading>
     </div>

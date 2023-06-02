@@ -14,13 +14,14 @@
   <TheNavbar></TheNavbar>
   <TheHeroSection />
   <TheCategorySection></TheCategorySection>
-  <CardBig bg-color="bg-color-1" :src-img="pizza"></CardBig>
+  <TheTrendingSection></TheTrendingSection>
+  <!-- <CardBig bg-color="bg-color-1" :src-img="pizza"></CardBig> -->
 </template>
 <script>
 import TheNavbar from "../components/TheNavbar.vue";
 import TheHeroSection from "../components/TheHeroSection.vue";
 import TheCategorySection from "../components/TheCategorySection.vue";
-import CardBig from "../components/CardBig.vue";
+import TheTrendingSection from "../components/TheTrendingSection.vue";
 import kebab from "@/assets/images/kebab.png";
 import pizza from "@/assets/images/1.png";
 
@@ -30,8 +31,7 @@ export default {
     TheNavbar,
     TheHeroSection,
     TheCategorySection,
-
-    CardBig,
+    TheTrendingSection,
   },
   data() {
     return {
