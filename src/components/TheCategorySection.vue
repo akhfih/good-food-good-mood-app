@@ -33,7 +33,6 @@
       :space-between="12"
       :free-mode="true"
       @swiper="onSwiper"
-      @slideChange="onSlideChange"
     >
       <swiper-slide v-for="category in categorys" :key="category.title"
         ><CardSmall

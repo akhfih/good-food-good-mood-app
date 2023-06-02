@@ -1,13 +1,11 @@
 <template>
   <!-- <div class="wrapper">
-    <BaseButton large>ALL Receipt</BaseButton>
-    <BaseButton>Daftar Sekarang</BaseButton>
-    <BaseButton secondary>About Us</BaseButton>
+   
     <BaseButton icon><i class="fa-regular fa-envelope"></i></BaseButton>
     <BaseButton icon><i class="fa-solid fa-phone"></i></BaseButton>
     <BaseButton icon><i class="fa-brands fa-instagram"></i> </BaseButton>
 
-    <SlideButton next></SlideButton>
+  
 
 
   </div> -->
@@ -15,15 +13,14 @@
   <TheHeroSection />
   <TheCategorySection></TheCategorySection>
   <TheTrendingSection></TheTrendingSection>
-  <!-- <CardBig bg-color="bg-color-1" :src-img="pizza"></CardBig> -->
+  <TheFooter />
 </template>
 <script>
 import TheNavbar from "../components/TheNavbar.vue";
 import TheHeroSection from "../components/TheHeroSection.vue";
 import TheCategorySection from "../components/TheCategorySection.vue";
 import TheTrendingSection from "../components/TheTrendingSection.vue";
-import kebab from "@/assets/images/kebab.png";
-import pizza from "@/assets/images/1.png";
+import TheFooter from "../components/TheFooter.vue";
 
 export default {
   name: "ViewHome",
@@ -32,12 +29,10 @@ export default {
     TheHeroSection,
     TheCategorySection,
     TheTrendingSection,
+    TheFooter,
   },
   data() {
-    return {
-      kebab: kebab,
-      pizza,
-    };
+    return {};
   },
 };
 </script>
