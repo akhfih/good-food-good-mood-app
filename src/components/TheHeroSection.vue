@@ -18,6 +18,7 @@
         <div class="hero__figure">
           <img :src="figure" alt="hero__figure" />
         </div>
+        <CardFigure />
       </div>
     </div>
   </div>
@@ -26,10 +27,12 @@
 import BaseButton from "../components/BaseButton.vue";
 import figure from "../assets/images/piring.png";
 import background from "../assets/images/hero-background.svg";
+import CardFigure from "./CardFigure.vue";
 export default {
   name: "TheHeroSection",
   components: {
     BaseButton,
+    CardFigure,
   },
   data() {
     return {
@@ -45,6 +48,7 @@ export default {
   background-image: url(@/assets/images/hero-background.svg);
 
   .wrapper {
+    position: relative;
     height: min-content;
     display: flex;
     background-color: transparent;
