@@ -14,6 +14,7 @@
   <TheCategorySection></TheCategorySection>
   <TheTrendingSection></TheTrendingSection>
   <TheFooter />
+  <TheMenuNavbar></TheMenuNavbar>
 </template>
 <script>
 import TheNavbar from "../components/TheNavbar.vue";
@@ -21,6 +22,7 @@ import TheHeroSection from "../components/TheHeroSection.vue";
 import TheCategorySection from "../components/TheCategorySection.vue";
 import TheTrendingSection from "../components/TheTrendingSection.vue";
 import TheFooter from "../components/TheFooter.vue";
+import TheMenuNavbar from "../components/TheMenuNavbar.vue";
 
 export default {
   name: "ViewHome",
@@ -30,6 +32,7 @@ export default {
     TheCategorySection,
     TheTrendingSection,
     TheFooter,
+    TheMenuNavbar,
   },
   data() {
     return {};
